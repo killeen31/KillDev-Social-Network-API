@@ -1,0 +1,25 @@
+{
+  "name": "killdev-social-network-api",
+  "version": "1.0.0",
+  "description": "API for Social Network using NoSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killeen31/KillDev-Social-Network-API.git"
+  },
+  "keywords": [
+    "Social",
+    "Network",
+    "NoSQl"
+  ],
+  "author": "killeen31",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/killeen31/KillDev-Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/killeen31/KillDev-Social-Network-API#readme"
+}
