@@ -4,20 +4,22 @@ const {
   getThoughtsById,
   createThought,
   deleteThought,
+  updateThoughtById,
   createReaction,
   deleteReaction,
+  removeReaction,
 } = require('../../controllers/thought-controller');
 
 // /api/students
-router.route('/').get(getStudents).post(createStudent);
+router.route('/').get(getAllThoughts).post(createThought);
 
 // /api/students/:studentId
-router.route('/:studentId').get(getSingleStudent).delete(deleteStudent);
+router.route('/:thoughtId').get(getThoughtsById).put(updateThoughtById).delete(deleteThought);
 
 // /api/students/:studentId/assignments
-router.route('/:studentId/assignments').post(addAssignment);
+router.route('/:thoughtId/reactions').post(createReaction);
 
 // /api/students/:studentId/assignments/:assignmentId
-router.route('/:studentId/assignments/:assignmentId').delete(removeAssignment);
+router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction);
 
 module.exports = router;
