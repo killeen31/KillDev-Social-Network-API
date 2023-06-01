@@ -1,8 +1,9 @@
-const { Thought, User, Reaction } = require('../models');
-const {Types} = require('mongoose')
+const { Thought, User } = require('../models/index');
 
 const ThoughtController = {
     async getAllThoughts(req, res) {
-        try {}
+        try {
+            const thoughts = await Thought.find
+        }
     }
 }
