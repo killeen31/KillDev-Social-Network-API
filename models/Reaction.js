@@ -1,6 +1,6 @@
 const { Schema, Types } = require('mongoose');
 
-const assignmentSchema = new Schema(
+const Schema = new Schema(
   {
     assignmentId: {
       type: Schema.Types.ObjectId,
